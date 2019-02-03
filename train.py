@@ -1,7 +1,3 @@
-'''
-This script handling the training process.
-'''
-
 import argparse
 import math
 import time

@@ -1,5 +1,3 @@
-''' Translate input text with trained model. '''
-
 import torch
 import torch.utils.data
 import argparse

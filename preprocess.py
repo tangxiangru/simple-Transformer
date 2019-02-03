@@ -1,4 +1,3 @@
-
 import argparse
 import torch
 import transformer.Constants as Constants

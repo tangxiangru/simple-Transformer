@@ -1,5 +1,3 @@
-''' This module will handle the text generation with beam search. '''
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
