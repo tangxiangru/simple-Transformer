@@ -3,6 +3,7 @@
   * TensorFlow >= 1.2 (Probably 1.1 should work, too, though I didn't test it)
   * regex
   * nltk
+  * tqdm
   * 直接对word构建词表(没有采用bpe 或者 word-piece)if you want.
   * 记得调learning rate
 
@@ -16,14 +17,13 @@
   * `eval.py` 测试
 
 ## Training
-* STEP 1. Download [IWSLT 2016 German–English parallel corpus](https://wit3.fbk.eu/download.php?release=2016-01&type=texts&slang=de&tlang=en) and extract it to `corpora/` folder.
+* STEP 1. 下载数据：举个例子如翻译数据 
 ```sh
-wget -qO- --show-progress https://wit3.fbk.eu/archive/2016-01//texts/de/en/de-en.tgz | tar xz; mv de-en corpora
+wget https://wit3.fbk.eu/archive/2016-01//texts/de/en/de-en.tgz ; tar zxvf de-en.tgz; mv de-en corpora
 ```
-* STEP 2. Adjust hyper parameters in `hyperparams.py` if necessary.
-* STEP 3. Run `prepro.py` to generate vocabulary files to the `preprocessed` folder.
-* STEP 4. Run `train.py` or download the [pretrained files](https://www.dropbox.com/s/fo5wqgnbmvalwwq/logdir.zip?dl=0).
+* STEP 2. 调整参数和数据目录 `hyperparams.py` i* STEP 3. `python prepro.py` 构建的词表在 `preprocessed` 文件夹
+* STEP 4. `python train.py` or [pretrained files](https://www.dropbox.com/s/fo5wqgnbmvalwwq/logdir.zip?dl=0).
 
 ## Evaluation
-  * Run `eval.py`.
+  * `python eval.py`.
 
