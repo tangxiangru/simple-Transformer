@@ -21,7 +21,8 @@
 ```sh
 wget https://wit3.fbk.eu/archive/2016-01//texts/de/en/de-en.tgz ; tar zxvf de-en.tgz; mv de-en corpora
 ```
-* STEP 2. 调整参数和数据目录 `hyperparams.py` i* STEP 3. `python prepro.py` 构建的词表在 `preprocessed` 文件夹
+* STEP 2. 调整参数和数据目录 `hyperparams.py` 
+* STEP 3. `python prepro.py` 构建的词表在 `preprocessed` 文件夹
 * STEP 4. `python train.py` or [pretrained files](https://www.dropbox.com/s/fo5wqgnbmvalwwq/logdir.zip?dl=0).
 
 ## Evaluation
