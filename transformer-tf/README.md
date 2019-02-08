@@ -4,7 +4,7 @@
   * regex
   * nltk
   * tqdm
-  * 直接对word构建词表(没有采用bpe 或者 word-piece)if you want.
+  * 直接对每个词构建词表(没有采用bpe 或者 word-piece)
   * 记得调learning rate
 
 
